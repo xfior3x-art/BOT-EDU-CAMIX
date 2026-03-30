@@ -47,7 +47,7 @@ def webhook():
         user_name = join_request["from"].get("first_name", "amore")
 
         welcome_message = (
-            f"Ciao {user_name} ho tanta voglia di farti sborrare 🤭\n\n"
+            f"Ciao {user_name} ho tanta voglia di farti sborrare ❤️🤭\n\n"
             "Non fare il timido e dimostrami quello che sai fare 😉\n\n"
         )
 
@@ -61,7 +61,7 @@ def webhook():
                     "inline_keyboard": [
                         [
                             {
-                                "text": "👉 ENTRA 👈",
+                                "text": "👉 ENTRA QUI 👈",
                                 "url": BUTTON_URL
                             }
                         ]
