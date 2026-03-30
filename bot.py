@@ -10,10 +10,10 @@ BASE_URL = f"https://api.telegram.org/bot{TOKEN}"
 app = Flask(__name__)
 
 # immagine
-IMAGE_URL = "https://i.postimg.cc/52QtwC6P/Picsart-26-01-29-14-48-17-486(1).jpg"
+IMAGE_URL = "https://i.postimg.cc/fWBrM9qv/Picsart-26-01-29-17-09-19-908.jpg"
 
 # link del bottone
-BUTTON_URL = "https://onlyfans.com/lucreziaboratti/c15"
+BUTTON_URL = "https://onlyfans.com/lucreziaboratti/c12"
 
 def tg(method, data):
     r = requests.post(f"{BASE_URL}/{method}", json=data, timeout=20)
@@ -47,8 +47,8 @@ def webhook():
         user_name = join_request["from"].get("first_name", "amore")
 
         welcome_message = (
-            f"Ei {user_name} ho una voglia assurda di divertirmi con te 🔞❤️\n\n"
-            "Non fare il timido e entra qui sotto se vuoi sborrare, mando una foto gratis ai primi 5 che mi scrivono 😉\n\n"
+            f"Ciao {user_name} ho tanta voglia di farti sborrare 🤭\n\n"
+            "Non fare il timido e dimostrami quello che sai fare 😉\n\n"
         )
 
         # invia immagine + testo sotto + bottone
@@ -61,7 +61,7 @@ def webhook():
                     "inline_keyboard": [
                         [
                             {
-                                "text": "👉 CLICCA QUI 👈",
+                                "text": "👉 ENTRA 👈",
                                 "url": BUTTON_URL
                             }
                         ]
